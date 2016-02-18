@@ -1,5 +1,8 @@
+
+<select name ="age" id = "age">
 <?php 
-
-echo ('性別: ' . htmlspecialchars($_POST['gender'], ENT_QUOTES, 'UTF-8'));
-
+for ($i=10; $i<=70; $i++) {
+	echo ('<option value="' .$i. '">' .$i. '歳</option>');
+}
  ?>
+</select>
