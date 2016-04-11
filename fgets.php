@@ -11,4 +11,11 @@ $a3 = trim(fgets(STDIN));
 echo $a1.'<br>';
 echo $a2.'<br>';
 echo $a3.'<br>';
+
+//掛け算
+$a4 = fgets(STDIN);
+$a5 = fgets(STDIN);
+$a6 = fgets(STDIN);
+
+echo $a3*$a4*$a5;
 ?>
