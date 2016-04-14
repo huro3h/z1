@@ -38,4 +38,20 @@ $max = rand(0,$num);
 // var_dump($max);
 echo $member[$max];
 
+
+// 演習課題「くじ引きを作ろう」 (行数不明の複数行のおみくじVer.)
+
+// 標準入力で行数不明の複数行のおみくじ結果データが入力されます。
+// 標準入力の空行も含む全ての行の値を配列に代入し、
+// その内容をランダムで出力するプログラムを作成してください。
+// 出力は配列尾内容をprint_rで出力し、その次の行でおみくじの結果を表示してください。
+while($input = fgets(STDIN)){
+    $input = trim($input);
+    $array[] = $input;
+}
+print_r($array);
+$num = count($array)-1;
+$max = rand(0,$num);
+echo $array[$max];
+
 ?>
