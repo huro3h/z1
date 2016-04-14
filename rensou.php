@@ -40,7 +40,7 @@ print_r($item);
 for($i=0 ; $i<3 ; $i++){
 	$input = trim(fgets(STDIN));
 	// 入力値を/で分割
-	$key_value =explode("/", $input);
+	$key_value = explode("/", $input);
 	// 手前の要素をkeyとして、後の要素をvalueとして連想配列に代入
 	$key = $key_value[0];
 	$value = $key_value[1];
