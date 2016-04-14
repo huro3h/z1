@@ -27,4 +27,27 @@ $item = array(
 );
 
 print_r($item);
+
+// 演習課題「連想配列から特定要素を取り出す」
+// [Hint!] print_rで何が代入されているか確認して、
+// 入力されたものがどのように連想配列に代入されているか見てみると良いでしょう。
+
+// 右側のエディターエリアのプログラムを元に
+// 配列 $team のkeyが「戦士」のvalue要素を出力してください。
+// エディターエリアに書かれているプログラムは、標準入力の値を/で分割し、手前の要素をkeyとして、
+// 後の要素をvalueとして連想配列$teamに代入するプログラムです。
+
+for($i=0 ; $i<3 ; $i++){
+	$input = trim(fgets(STDIN));
+	// 入力値を/で分割
+	$key_value =explode("/", $input);
+	// 手前の要素をkeyとして、後の要素をvalueとして連想配列に代入
+	$key = $key_value[0];
+	$value = $key_value[1];
+	$team[$key] = $value;
+}
+// ここから下に記述
+// $team のkeyが戦士のvalueを出力
+//   print_r($team);
+   echo $team['戦士'];
 ?>
