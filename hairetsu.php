@@ -31,7 +31,7 @@ print_r($team);
 for($i=0; $i < 3; $i++){
     $team[] = trim(fgets(STDIN));
 }
-// ここから下に記述　
+// ここから下に記述
 // $team の冒頭の要素を削除
 unset($team[0]);
 print_r($team);
