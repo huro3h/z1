@@ -32,6 +32,42 @@ foreach($item_img as $item){
     echo "<img src=".$item.">";
     echo "<br>\n";
 }
-
 // $item_img変数につられて "img「 _ 」src="と入力しないように注意
+
+//  演習課題「アイテムリストを作ってみよう」
+// 右側のエディターエリアのプログラムを元に、アイテムリストを作ってみましょう。
+// 標準入力で複数行のアイテム名の入力があります。それを元に
+// $item_imgで定義された画像を改行せず順番に出力してみましょう。
+
+// ※標準入力で与えられるアイテム名は、$item_imgに無いアイテムは
+// 出てこないものとします。
+// ↓（ 誤:標準入力から取得していない）
+$item_img = array(
+    "剣" => "http://paiza.jp/learning/images/sword.png",
+    "盾" => "http://paiza.jp/learning/images/shield.png",
+    "回復薬" => "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" => "http://paiza.jp/learning/images/crystal.png"
+);
+// ここから下に記述
+$item_list = array(
+    "回復薬","盾","クリスタル","クリスタル","剣","剣"
+    );
+foreach($item_list as $item){
+    echo "<img src=".$item_img[$item].">";
+}
+
+// ↓（ 正:標準入力から取得）
+$item_img = array(
+    "剣" => "http://paiza.jp/learning/images/sword.png",
+    "盾" => "http://paiza.jp/learning/images/shield.png",
+    "回復薬" => "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" => "http://paiza.jp/learning/images/crystal.png"
+);
+while ($input = fgets(STDIN)){
+	$input = trim($input);
+	echo "<img src=".$item_img[$input].">";
+}
+
+
+
  ?>
