@@ -58,4 +58,26 @@ $inp = explode(" ",$in);
 // var_dump($inp);
 echo "$inp[0]/$inp[1]/$inp[2]";
 
+// D002:数の比較
+// ある正の整数aとbがスペース区切りで入力されます。
+// aとbを比較し大きい方の値を出力して下さい。aとbが同じ場合は「eq」と出力して下さい。
+
+// 70点(´・ω・`)
+$in = fgets(STDIN);
+$inp = explode(" ",$in);
+// var_dump ($inp);
+// echo $inp[0];
+// echo $inp[1];
+
+if($inp[0] == $inp[1]){
+    echo "eq";
+}elseif($inp[0] < $inp[1]){
+    echo $inp[1];
+}else{
+    echo $inp[0];
+}
+
+//100点
+
+
  ?>
