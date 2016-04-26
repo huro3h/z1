@@ -164,12 +164,13 @@ echo strlen($in);
 // Hello [s_1],[s_2],...[s_n].
 // 「Hello」に文字列s_iを入力された順に「,」で結合したものを半角スペースで結合し、
 // 末尾に「.」を結合した文字列を出力するプログラムを作成してください。
-$in = trim(fgets(STDIN));
-for ($i = 0; $i < $in; $i++) {
-	$members[] = trim(fgets(STDIN));
-}
-$members = implode(",", $members);
-echo "Hello " . $members . ".";
+    $in = trim(fgets(STDIN));
+    for($i=0; $i<$in; $i++){
+        $mem[] = trim(fgets(STDIN));
+    }
+    // var_dump($mem);
+    $say = implode(",",$mem);
+    echo "Hello ".$say.".";
 
 // D024:三角形の内角の和
 // 平面上の三角形の内角の和は全て足すと 180 度になります。
