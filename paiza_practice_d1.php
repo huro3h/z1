@@ -98,6 +98,17 @@ if($in1 == $in2 && $in2 == $in3){
     echo "NO";
 }
 
+// D039:swift
+let inp1 = readLine()!
+let inp2 = readLine()!
+let inp3 = readLine()!
+
+if (inp1 == inp2) && (inp2 == inp3) {
+    print("YES")
+}else{
+    print("NO")
+}
+
 // D034:どれにしようかな
 // あなたはレストランで何を注文しようか迷っています。しかしあまり時間がないので
 // 「どれにしようかな天の神様の言うとおり」で决めてしまいましょう。
