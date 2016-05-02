@@ -62,7 +62,7 @@ echo "$inp[0]/$inp[1]/$inp[2]";
 // ある正の整数aとbがスペース区切りで入力されます。
 // aとbを比較し大きい方の値を出力して下さい。aとbが同じ場合は「eq」と出力して下さい。
 
-// 70点(´・ω・`)
+// 70点( *´-`)
 $in = fgets(STDIN);
 $inp = explode(" ",$in);
 // var_dump ($inp);
@@ -75,6 +75,24 @@ if($inp[0] == $inp[1]){
     echo $inp[1];
 }else{
     echo $inp[0];
+}
+
+// 100点 \( 'ω')/
+// 上記と異なる箇所は、2つの数字になんでも良いので一度整数を代入し、
+// 値をString型 → int型に自動変換させることでクリアできる
+$in = fgets(STDIN);
+$inp = explode(" ",$in);
+// var_dump ($inp);
+$inp1 = 0 + $inp[0];
+$inp2 = 0 + $inp[1];
+// var_dump($inp1);
+
+if($inp1 == $inp2){
+    echo "eq";
+}elseif($inp1 > $inp2){
+    echo $inp1;
+}else{
+    echo $inp2;
 }
 
 // D023:Aの個数
