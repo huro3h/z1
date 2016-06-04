@@ -110,12 +110,8 @@ echo $input;
 // 3
 // と出力して下さい。
 
-$in = trim(fgets(STDIN));
-//値が空でなければループして値を取得し続ける
-while($in){
-    $array[] = $in;
-    $in = trim(fgets(STDIN));
-}
+
+
 // var_dump($array);
 $min = min($array);
 $max = max($array);
