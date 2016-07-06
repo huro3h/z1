@@ -12,8 +12,8 @@
 
         $total = 0; // 運ぶ合計回数
 
-        foreach ($faxDataPerHour as $faxData) {
-        	$total += ceil($faxData / $carryMax);
+        foreach ($faxDataPerHour as $faxData2) {
+        	$total += ceil($faxData2 / $carryMax);
         }
 
         echo $total;
